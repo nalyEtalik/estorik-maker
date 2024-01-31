@@ -115,6 +115,7 @@ final class MakeTwcController extends AbstractMaker
                 'route_name' => Str::asRouteName($controllerClassNameDetails->getRelativeNameWithoutSuffix()),
                 'with_template' => $this->isTwigInstalled() && !$noTemplate,
                 'template_name' => $templateName,
+                'method_name' => "index",
             ]
         );
 
